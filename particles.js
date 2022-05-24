@@ -1522,10 +1522,13 @@ window.particlesJS = function(tag_id, params){
 window.particlesJS.load = function(tag_id, path_config_json, callback){
 
   /* load json config */
+  console.log('Loadong json...')
   var xhr = new XMLHttpRequest();
   xhr.open('GET', path_config_json);
   xhr.onreadystatechange = function (data) {
+    console.log('xhr readyState: ' + xhr.readyState)
     if(xhr.readyState == 4){
+      
       if(xhr.status == 200){
         var params = JSON.parse(data.currentTarget.response);
         window.particlesJS(tag_id, params);
