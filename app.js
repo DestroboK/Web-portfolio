@@ -1586,7 +1586,7 @@ var pJS = function(tag_id, params){
     xhr.send();
   
   };
-// await new Promise(2000);
-  particlesJS.load('particles-js', 'files/assets/particles.json', function() {
+
+  window.particlesJS.load('particles-js', 'files/assets/particles.json', function() {
     console.log('callback - particles.js config loaded');
   });
