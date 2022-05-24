@@ -38,6 +38,6 @@ function PageTransition(){
 
 PageTransition();
 
-particlesJS.load('particles-js', 'particles.json', function() {
+particlesJS.load('particles-js', 'files/assets/particles.json', function() {
     console.log('callback - particles.js config loaded');
   });
