@@ -4,6 +4,9 @@ const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-content');
 
 
+particlesJS.load('particles-js', 'files/assets/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
 function PageTransition(){
     for(let i=0; i < sectBtn.length; i++){
         sectBtn[i].addEventListener('click',function(){
@@ -37,7 +40,3 @@ function PageTransition(){
 }
 
 PageTransition();
-
-particlesJS.load('particles-js', 'files/assets/particles.json', function() {
-    console.log('callback - particles.js config loaded');
-  });
